@@ -28,7 +28,7 @@ Includes both **CLI** and **GUI** interfaces, with optional **Fernet encryption*
 ### 1️⃣ Clone or Download
 
 ```bash
-git clone https://github.com/yourusername/stego_tool.git
+git clone https://github.com/cyber-raavan/Project_Internelevatelab
 cd stego_tool
 ```
 
