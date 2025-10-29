@@ -32,7 +32,7 @@ git clone https://github.com/cyber-raavan/Project_Internelevatelab
 cd ./Project_Internelevatelab
 ```
 
-Or simply place the file `stego_tool.py` in your desired directory.
+Or simply place the file `stego_msj.py` in your desired directory.
 
 ---
 
@@ -67,7 +67,7 @@ pip install pillow cryptography
 
 ### 🧾 Show Help
 ```bash
-python stego_tool.py --help
+python stego_msj.py --help
 ```
 
 ---
@@ -76,7 +76,7 @@ python stego_tool.py --help
 This key is optional but required if you want encryption/decryption.
 
 ```bash
-python stego_tool.py genkey
+python stego_msj.py genkey
 ```
 
 Output example:
@@ -88,24 +88,24 @@ DvA6u2rq9pCJzY6zIY6wPUyC27dB3Ncc1sJzYtVYz4Y=
 
 ### 📥 Embed (Hide a File)
 ```bash
-python stego_tool.py embed --cover cover.png --infile secret.txt --out stego.png
+python stego_msj.py embed --cover cover.png --infile secret.txt --out stego.png
 ```
 
 With encryption:
 ```bash
-python stego_tool.py embed --cover cover.png --infile secret.txt --out stego.png --key DvA6u2rq9pCJzY6zIY6wPUyC27dB3Ncc1sJzYtVYz4Y=
+python stego_msj.py embed --cover cover.png --infile secret.txt --out stego.png --key DvA6u2rq9pCJzY6zIY6wPUyC27dB3Ncc1sJzYtVYz4Y=
 ```
 
 ---
 
 ### 📤 Extract (Retrieve Hidden File)
 ```bash
-python stego_tool.py extract --stego stego.png --outdir ./output
+python stego_msj.py extract --stego stego.png --outdir ./output
 ```
 
 With decryption:
 ```bash
-python stego_tool.py extract --stego stego.png --outdir ./output --key DvA6u2rq9pCJzY6zIY6wPUyC27dB3Ncc1sJzYtVYz4Y=
+python stego_msj.py extract --stego stego.png --outdir ./output --key DvA6u2rq9pCJzY6zIY6wPUyC27dB3Ncc1sJzYtVYz4Y=
 ```
 
 ---
@@ -114,7 +114,7 @@ python stego_tool.py extract --stego stego.png --outdir ./output --key DvA6u2rq9
 
 Launch the GUI with:
 ```bash
-python stego_tool.py gui
+python stego_msj.py gui
 ```
 
 ### 🖥️ GUI Features
@@ -154,14 +154,14 @@ python stego_tool.py gui
 
 ```bash
 # Step 1: Generate key
-python stego_tool.py genkey
+python stego_msj.py genkey
 # -> Save key safely
 
 # Step 2: Embed secret file
-python stego_tool.py embed --cover cover.png --infile secret.txt --out stego.png --key <your_key>
+python stego_msj.py embed --cover cover.png --infile secret.txt --out stego.png --key <your_key>
 
 # Step 3: Extract hidden file
-python stego_tool.py extract --stego stego.png --outdir ./extracted --key <your_key>
+python stego_msj.py extract --stego stego.png --outdir ./extracted --key <your_key>
 ```
 
 ---
