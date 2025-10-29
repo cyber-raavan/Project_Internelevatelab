@@ -29,7 +29,7 @@ Includes both **CLI** and **GUI** interfaces, with optional **Fernet encryption*
 
 ```bash
 git clone https://github.com/cyber-raavan/Project_Internelevatelab
-cd stego_tool
+cd ./Project_Internelevatelab
 ```
 
 Or simply place the file `stego_tool.py` in your desired directory.
